@@ -123,7 +123,7 @@
             designed to seamlessly integrate autonomous navigation and manual
             control capabilities. The robot operates in two distinct modes:
             <strong>Autonomous</strong>, where it follows a designated line on
-            the ground using an array of five line-following sensors, and
+            the ground using an array of five IR sensors, and
             <strong>Manual</strong>, which allows for direct control through a
             PS4 controller connected via Bluetooth.
           </p>
@@ -138,9 +138,8 @@
           <p>
             To enhance versatility, the robot features four DC motors
             strategically selected to balance torque and speed, providing
-            optimal performance under varying loads. Two servos are incorporated
-            to operate a robotic arm and gripper, enabling the robot to interact
-            with its environment by picking up and manipulating objects.
+            optimal performance under varying loads. one servo for the hammr
+            mechanism.
           </p>
         </div>
 
@@ -157,8 +156,8 @@
             <div class="hardware-point">
               <h4>🔌 Schematic Design & Layout (Alfares Ahmed)</h4>
               <p>
-                <strong>ESP32-S NodeMCU</strong> serves as the brain, featuring
-                dual-core processing, Wi-Fi, and Bluetooth/BLE for versatile
+                <strong>ESP32-WROOM-32 Development Board 38-Pin</strong> serves as the brain, featuring
+                 Wi-Fi, and Bluetooth/BLE for versatile
                 connectivity and real-time decision making. Custom PCB designs
                 with optimal component placement.
               </p>
@@ -167,10 +166,9 @@
             <div class="hardware-point">
               <h4>🔗 Cable Management & Integration (Omar Mohamed)</h4>
               <p>
-                <strong>5x TCRT5000 Line Sensors</strong> with organized wiring
-                harnesses provide precise environmental awareness, enabling
-                accurate line following with real-time feedback for autonomous
-                navigation.
+                <strong>8 x JST PINS AND CABLES</strong> with organized wiring
+                harnesses provide clean connections between sensors,
+                actuators, and the microcontroller, ensuring reliable signal integrity.
               </p>
             </div>
 
@@ -179,7 +177,7 @@
               <p>
                 <strong>4x DC Geared Motors (148-600 RPM)</strong> deliver
                 optimal torque-speed balance, powered by a
-                <strong>9V rechargeable battery system</strong> with clean power
+                <strong>12V rechargeable battery system</strong> with clean power
                 distribution.
               </p>
             </div>
@@ -384,16 +382,15 @@
                 class="component-image"
               />
               <div class="component-details">
-                <p><strong>NodeMCU ESP32-S Development Board 38-Pin</strong></p>
+                <p><strong>ESP32-WROOM-32 Development Board 38-Pin</strong></p>
                 <p>
-                  The <strong>ESP32-S NodeMCU by Ai-Thinker</strong> is a
+                  The <strong>ESP32-WROOM-32 Development Board 38-Pin</strong> is a
                   powerful and cost-effective microcontroller ideal for IoT
                   projects. It features <strong>dual-core processing</strong>,
                   <strong>Wi-Fi</strong>, and
                   <strong>Bluetooth/BLE</strong> integration, offering versatile
-                  connectivity with <strong>28 digital I/O pins</strong>,
-                  <strong>8 ADC</strong> inputs, and multiple communication
-                  protocols (UART, SPI, and I2C).
+                  connectivity with <strong>38 pins</strong>
+                  running at 240 MHz 
                 </p>
               </div>
             </div>
@@ -433,9 +430,6 @@
                   DC motors would be necessary to achieve the optimal speed and
                   torque for our design.
                 </p>
-                <p>
-                  This is the torque for one motor so in total torque 0.1904Nm
-                </p>
               </div>
             </div>
           </div>
@@ -450,10 +444,10 @@
               />
               <div class="component-details">
                 <p>
-                  Initially, we attempted to use three line-following sensors;
-                  however, to improve accuracy, we decided it would be more
-                  effective to add two additional sensors, bringing the total to
-                  five.
+                  We selected the <strong>Line Tracking Sensor Module 5 Channel
+                  </strong> because it provides five sensors, which is the
+                  optimal number for our design. This configuration allows for
+                  accurate line detection and effective navigation.
                 </p>
               </div>
             </div>
@@ -464,7 +458,7 @@
             <div class="component-details">
               <p>
                 We have a total of three batteries, providing a combined output
-                of 9V, with an additional spare battery on hand in case of any
+                of 12V, with an additional spare battery on hand in case of any
                 damage to the others.
               </p>
             </div>
@@ -475,9 +469,8 @@
         <div class="component">
           <h3>Schematics and PCBs</h3>
           <p>
-            Three printed circuit boards (PCBs) were designed and fabricated:
-            one for the ESP microcontroller and one for motor driver, utilizing
-            the <strong>L293D</strong> integrated circuit for motor control.
+            we have made over 10 fabrication and design fixing problems found on the way
+            to the final PCB design.
           </p>
 
           <div class="pcb-section">
@@ -509,19 +502,14 @@
               <h5>Components:</h5>
               <ul>
                 <li>Buck Converter</li>
-                <li>Diode</li>
-                <li>LED for circuit indication</li>
-                <li>Resistor: 350 Ohm</li>
-                <li>RGB LED for Automatic and Manual mode</li>
-                <li>5-Pin Headers (Male-Male) - Quantity: 8 pins</li>
-                <li>2-Pin Headers (Male-Male) - Quantity: 19 pins</li>
-                <li>2-Pin Headers (Male-Female) - Quantity: 19 pins</li>
-                <li>1-Screw Terminal x 3</li>
-                <li>3-Screw Terminals x 2</li>
-                <li>10 JST connectors</li>
-                <li>Non-polarized Capacitor</li>
-                <li>Polarized Capacitor</li>
                 <li>ESP32 microcontroller</li>
+                <li>Line Tracking Sensor Module 5 Channel</li>
+                <li>8 JST connectors for cable management</li>
+                <li>8 JST cables</li>
+                <li>1 screw terminal for the battery connection</li>
+                <li>38 female pin headers</li>
+                <li>4 male pin headers</li>
+
               </ul>
             </div>
           </div>
@@ -543,7 +531,7 @@
                 />
                 <img
                   src="media/image18.jpeg"
-                  alt="Base Balance Issue"
+                  alt="Second Base Design"
                   class="design-image"
                 />
                 <img
@@ -848,17 +836,17 @@
 
           <div class="team-photos">
             <img
-              src="media/image38.png"
+              src="team-love1.jpg"
               alt="Team Photo 1"
               class="team-photo"
             />
             <img
-              src="media/image39.jpeg"
+              src="team love2.jpg"
               alt="Team Photo 2"
               class="team-photo"
             />
             <img
-              src="media/image40.jpeg"
+              src="media/image39.jpeg"
               alt="Team Photo 3"
               class="team-photo"
             />
@@ -873,7 +861,7 @@
               class="team-photo"
             />
             <img
-              src="media/image43.jpeg"
+              src="team love 3.jpg"
               alt="Team Photo 6"
               class="team-photo"
             />
