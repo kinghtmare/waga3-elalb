@@ -684,7 +684,8 @@ footer:hover {
   box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
 }
 
-.code-images, .final-code-images {
+.code-images,
+.final-code-images {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -818,23 +819,32 @@ footer:hover {
     columns: 1;
   }
 
-  .design-content, .component-content {
+  .design-content,
+  .component-content {
     flex-direction: column;
   }
 
-  .design-images, .design-description {
+  .design-images,
+  .design-description {
     width: 100%;
   }
 
   .technical-report img {
     max-width: 100%;
   }
-  
-  .code-images, .final-code-images, .pcb-images, .design-images, .team-photos {
+
+  .code-images,
+  .final-code-images,
+  .pcb-images,
+  .design-images,
+  .team-photos {
     justify-content: center;
   }
-  
-  .hardware-point, .love-point, .process-step, .function-category {
+
+  .hardware-point,
+  .love-point,
+  .process-step,
+  .function-category {
     padding: 1rem;
   }
 }
