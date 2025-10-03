@@ -848,3 +848,447 @@ footer:hover {
     padding: 1rem;
   }
 }
+
+/* Timeline Section Styling */
+.timeline-section {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+  border-left: 4px solid #ff3333;
+  transition: all 0.3s ease;
+}
+
+.timeline-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  border-left-width: 6px;
+}
+
+.timeline-section h2 {
+  text-align: center;
+  color: #ff4444;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.timeline-section h2:hover {
+  border-bottom-color: #ff3333;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #ff3333, #ff6666);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.timeline-date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff3333;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  z-index: 2;
+  box-shadow: 0 3px 10px rgba(255, 51, 51, 0.3);
+  transition: all 0.3s ease;
+}
+
+.timeline-date:hover {
+  background: #ff5555;
+  transform: translateX(-50%) scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 51, 51, 0.4);
+}
+
+.timeline-content {
+  width: 45%;
+  background: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  border-color: #ff3333;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
+}
+
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background: #ff3333;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #1e1e1e, 0 0 0 6px #ff3333;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:nth-child(odd) .timeline-content::before {
+  right: -10px;
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+  left: -10px;
+}
+
+.timeline-content:hover::before {
+  background: #ff5555;
+  box-shadow: 0 0 0 4px #1e1e1e, 0 0 0 6px #ff5555, 0 0 15px rgba(255, 85, 85, 0.5);
+  transform: scale(1.2);
+}
+
+.timeline-content h3 {
+  color: #ff6666;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.timeline-content h3:hover {
+  color: #ff4444;
+  transform: translateX(5px);
+}
+
+.timeline-content p {
+  color: #cccccc;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+.timeline-content:hover p {
+  color: #ffffff;
+}
+
+/* Budget Statistics Styling */
+.budget-section {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+  border-left: 4px solid #ff3333;
+  transition: all 0.3s ease;
+}
+
+.budget-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  border-left-width: 6px;
+}
+
+.budget-section h2 {
+  text-align: center;
+  color: #ff4444;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.budget-section h2:hover {
+  border-bottom-color: #ff3333;
+}
+
+.budget-section h3 {
+  color: #ff5555;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #ff3333;
+  padding-left: 1rem;
+  transition: all 0.3s ease;
+}
+
+.budget-section h3:hover {
+  border-left-width: 6px;
+  padding-left: 1.2rem;
+}
+
+.budget-section h4 {
+  color: #ff6666;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.budget-section h4:hover {
+  color: #ff4444;
+  transform: translateX(5px);
+}
+
+/* Budget Overview Cards */
+.budget-overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+
+.budget-card {
+  flex: 1;
+  min-width: 200px;
+  background: #2a2a2a;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #444;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.budget-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #ff3333, #ff6666);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.budget-card:hover {
+  border-color: #ff3333;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 50, 50, 0.3);
+}
+
+.budget-card:hover::before {
+  transform: scaleX(1);
+}
+
+.budget-card h3 {
+  color: #ff6666;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  border: none;
+  padding: 0;
+}
+
+.budget-amount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff3333;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.budget-card:hover .budget-amount {
+  color: #ff5555;
+  transform: scale(1.1);
+}
+
+.budget-card p {
+  color: #cccccc;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.budget-card:hover p {
+  color: #ffffff;
+}
+
+/* Budget Breakdown */
+.budget-breakdown {
+  background: #252525;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.budget-breakdown:hover {
+  border-color: #ff3333;
+  box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
+}
+
+.budget-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.category {
+  background: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #ff3333;
+  transition: all 0.3s ease;
+}
+
+.category:hover {
+  border-left-width: 6px;
+  transform: translateX(5px);
+  background-color: #2d2d2d;
+}
+
+.category-bar {
+  width: 100%;
+  height: 20px;
+  background: #333;
+  border-radius: 10px;
+  margin: 1rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.category-fill {
+  height: 100%;
+  background: linear-gradient(to right, #ff3333, #ff6666);
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.category-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.category-amount {
+  color: #ff6666;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.category:hover .category-amount {
+  color: #ff4444;
+  transform: translateX(5px);
+}
+
+.category ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.category li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #cccccc;
+  transition: all 0.3s ease;
+}
+
+.category li:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+.category li:before {
+  content: "•";
+  color: #ff3333;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive Design for Timeline and Budget */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    width: calc(100% - 60px);
+    margin-left: 60px;
+    text-align: left;
+  }
+  
+  .timeline-date {
+    left: 20px;
+    transform: none;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content::before,
+  .timeline-item:nth-child(even) .timeline-content::before {
+    left: -10px;
+  }
+  
+  .budget-overview {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .budget-card {
+    min-width: auto;
+  }
+  
+  .category {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-section,
+  .budget-section {
+    padding: 20px;
+  }
+  
+  .timeline-content {
+    padding: 1rem;
+  }
+  
+  .budget-card {
+    padding: 1.5rem;
+  }
+  
+  .budget-amount {
+    font-size: 1.5rem;
+  }
+}
