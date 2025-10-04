@@ -872,7 +872,7 @@ footer:hover {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
   }
-  
+
   .team-photo {
     height: 250px;
   }
@@ -882,7 +882,7 @@ footer:hover {
   .team-photos {
     grid-template-columns: 1fr;
   }
-  
+
   .team-photo {
     height: 280px;
   }
