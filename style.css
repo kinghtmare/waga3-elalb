@@ -1,3 +1,4 @@
+/* ========== GLOBAL STYLES ========== */
 * {
   margin: 0;
   padding: 0;
@@ -10,21 +11,15 @@ body {
   color: #e0e0e0;
   line-height: 1.6;
   transition: background-color 0.5s ease;
-  background: radial-gradient(
-      circle at 20% 80%,
+  background: radial-gradient(circle at 20% 80%,
       rgba(255, 51, 51, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 80% 20%,
+      transparent 50%),
+    radial-gradient(circle at 80% 20%,
       rgba(255, 51, 51, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 40% 40%,
+      transparent 50%),
+    radial-gradient(circle at 40% 40%,
       rgba(255, 51, 51, 0.05) 0%,
-      transparent 50%
-    ),
+      transparent 50%),
     linear-gradient(135deg, #121212 0%, #1a1a1a 100%);
   background-attachment: fixed;
 }
@@ -36,6 +31,7 @@ body {
   transition: all 0.3s ease;
 }
 
+/* ========== HEADER & PROFILE ========== */
 header {
   text-align: center;
   padding: 40px 0;
@@ -89,6 +85,7 @@ h1:hover {
   text-shadow: 0 0 10px rgba(255, 85, 85, 0.5);
 }
 
+/* ========== ABOUT SECTION ========== */
 .about {
   background-color: #1e1e1e;
   padding: 30px;
@@ -105,6 +102,7 @@ h1:hover {
   border-left-width: 6px;
 }
 
+/* ========== HEADINGS ========== */
 h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
@@ -158,6 +156,7 @@ p:hover {
   transform: scaleX(1);
 }
 
+/* ========== LINKS ========== */
 a {
   color: #ff5555;
   text-decoration: none;
@@ -170,6 +169,7 @@ a:hover {
   text-shadow: 0 0 10px rgba(255, 51, 51, 0.5);
 }
 
+/* ========== FOOTER ========== */
 footer {
   text-align: center;
   padding: 20px;
@@ -183,6 +183,7 @@ footer:hover {
   border-top-color: #ff3333;
 }
 
+/* ========== SOCIAL LINKS ========== */
 .social-links {
   display: flex;
   justify-content: center;
@@ -209,7 +210,7 @@ footer:hover {
   color: #ff3333;
 }
 
-/* Technical Report Styling */
+/* ========== TECHNICAL REPORT ========== */
 .technical-report {
   margin-top: 2rem;
   background-color: #1e1e1e;
@@ -271,7 +272,7 @@ footer:hover {
   margin-bottom: 0.5rem;
 }
 
-/* Image Gallery Styling with Hover Effects */
+/* ========== IMAGE GALLERY ========== */
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -295,7 +296,7 @@ footer:hover {
   border-color: #ff5555;
 }
 
-/* Component Styling */
+/* ========== COMPONENTS ========== */
 .component {
   margin-bottom: 2rem;
   padding: 1.5rem;
@@ -337,7 +338,7 @@ footer:hover {
   min-width: 300px;
 }
 
-/* Hardware Overview Styling */
+/* ========== HARDWARE OVERVIEW ========== */
 .hardware-overview {
   display: flex;
   flex-direction: column;
@@ -365,7 +366,7 @@ footer:hover {
   font-size: 1.2rem;
 }
 
-/* Mechanical Process Styling */
+/* ========== MECHANICAL PROCESS ========== */
 .mechanical-process {
   display: flex;
   flex-direction: column;
@@ -418,7 +419,7 @@ footer:hover {
   left: 0;
 }
 
-/* Software Functions Styling */
+/* ========== SOFTWARE FUNCTIONS ========== */
 .software-functions {
   display: flex;
   flex-direction: column;
@@ -473,7 +474,7 @@ footer:hover {
   color: #ff5555;
 }
 
-/* Team Love Styling */
+/* ========== TEAM LOVE ========== */
 .team-love {
   display: flex;
   flex-direction: column;
@@ -516,7 +517,7 @@ footer:hover {
   color: #ff9999;
 }
 
-/* Sensor Comparison */
+/* ========== SENSOR COMPARISON ========== */
 .sensor-comparison {
   display: flex;
   flex-wrap: wrap;
@@ -545,7 +546,7 @@ footer:hover {
   border-color: #ff5555;
 }
 
-/* PCB Styling */
+/* ========== PCB SECTION ========== */
 .pcb-section {
   margin-bottom: 2rem;
   padding: 1.5rem;
@@ -610,7 +611,7 @@ footer:hover {
   left: 0;
 }
 
-/* Mechanical Design Styling */
+/* ========== MECHANICAL DESIGN ========== */
 .design-section {
   margin-bottom: 2rem;
   padding: 1.5rem;
@@ -686,7 +687,7 @@ footer:hover {
   left: 0;
 }
 
-/* Software Styling */
+/* ========== SOFTWARE SECTION ========== */
 .software-section {
   margin-bottom: 2rem;
   padding: 1.5rem;
@@ -699,15 +700,6 @@ footer:hover {
 .software-section:hover {
   border-color: #ff3333;
   box-shadow: 0 5px 15px rgba(255, 50, 50, 0.2);
-}
-
-.code-images,
-.final-code-images {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 1rem 0;
-  justify-content: center;
 }
 
 .code-image {
@@ -764,7 +756,7 @@ footer:hover {
   box-shadow: 0 3px 10px rgba(255, 50, 50, 0.2);
 }
 
-/* Team Photos Styling - IMPROVED */
+/* ========== TEAM PHOTOS ========== */
 .team-photos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -790,7 +782,7 @@ footer:hover {
   border-color: #ff5555;
 }
 
-/* Lists styling */
+/* ========== LISTS ========== */
 .technical-report ul {
   list-style-type: none;
   padding-left: 1.5rem;
@@ -817,7 +809,7 @@ footer:hover {
   left: 0;
 }
 
-/* Responsive Design */
+/* ========== RESPONSIVE DESIGN ========== */
 @media (max-width: 768px) {
   .profile-img {
     width: 150px;
@@ -888,7 +880,7 @@ footer:hover {
   }
 }
 
-/* Timeline Section Styling */
+/* ========== TIMELINE SECTION ========== */
 .timeline-section {
   background-color: #1e1e1e;
   padding: 30px;
@@ -1039,7 +1031,7 @@ footer:hover {
   color: #ffffff;
 }
 
-/* Budget Statistics Styling */
+/* ========== BUDGET SECTION ========== */
 .budget-section {
   background-color: #1e1e1e;
   padding: 30px;
@@ -1095,7 +1087,7 @@ footer:hover {
   transform: translateX(5px);
 }
 
-/* Budget Overview Cards */
+/* ========== BUDGET OVERVIEW CARDS ========== */
 .budget-overview {
   display: flex;
   flex-wrap: wrap;
@@ -1170,7 +1162,7 @@ footer:hover {
   color: #ffffff;
 }
 
-/* Budget Breakdown */
+/* ========== BUDGET BREAKDOWN ========== */
 .budget-breakdown {
   background: #252525;
   padding: 2rem;
@@ -1229,12 +1221,10 @@ footer:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   animation: shimmer 2s infinite;
 }
 
@@ -1242,6 +1232,7 @@ footer:hover {
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(100%);
   }
@@ -1284,4 +1275,31 @@ footer:hover {
   position: absolute;
   left: 0;
   font-size: 1.2rem;
+}
+
+/* ========== FINAL CODE IMAGES ========== */
+.final-code-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+  justify-items: center;
+}
+
+/* Images inside the container */
+.final-code-images .code-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(255, 50, 50, 0.2);
+  border: 3px solid #333;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+.final-code-images .code-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(255, 50, 50, 0.4);
+  border-color: #ff5555;
 }
