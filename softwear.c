@@ -4,6 +4,7 @@
 #include <PS4Controller.h>
 #include <ESP32Servo.h>
 
+// Motor 1 pins
 const int MOTOR1_IN1 = 3;  //*GPIO3
 const int MOTOR1_IN2 = 23; //*GPIO23
 const int MOTOR1_IN3 = 15; //*GPIO15
@@ -11,6 +12,7 @@ const int MOTOR1_IN4 = 2;  //*GPIO2
 const int MOTOR1_EN1 = 21; //*GPIO21
 const int MOTOR1_EN2 = 22; //*GPIO22
 
+// Motor 2 pins
 const int MOTOR2_IN1 = 17; //*GPIO17
 const int MOTOR2_IN2 = 5;  //*GPIO5
 const int MOTOR2_IN3 = 18; //*GPIO18
@@ -18,12 +20,14 @@ const int MOTOR2_IN4 = 19; //*GPIO19
 const int MOTOR2_EN1 = 4;  //*GPIO4
 const int MOTOR2_EN2 = 16; //*GPIO16
 
+// IR sensor pins
 const int IR1 = 32; //*GPIO32
 const int IR2 = 33; //*GPIO33
 const int IR3 = 25; //*GPIO25
 const int IR4 = 26; //*GPIO26
 const int IR5 = 27; //*GPIO27
 
+// Constants
 const int DEFAULT_SPEED = 200;
 const int TURN_SPEED = 150;
 const int LINE_SPEED = 180;
@@ -31,6 +35,7 @@ const int MAX_LINE_LOST_COUNT = 10;
 const int IR_THRESHOLD = 2000;    // ADC threshold (0-4095). Tune to your sensors
 const int JOYSTICK_DEADZONE = 15; // 0-255 PS4 stick deadzone
 const int SERVO_PIN = 14;         // Choose a free PWM-capable pin
+
 Servo panServo;
 
 enum Mode
@@ -137,6 +142,7 @@ void turnLeft(int speed)
     setMotor2Direction(HIGH, LOW, HIGH, LOW);
     setMotor2Speed(speed);
 }
+
 void turnRight(int speed)
 {
     // Motor 1: Forward (right side - to turn right)
@@ -160,7 +166,7 @@ void stopMotors()
 int readSensorDigital(int pin)
 {
     int value = digitalRead(pin);
-    return sensorInverted ? !value : value;
+    return sensorInverted ? !value : value;
 }
 
 int readSensorAnalog(int pin)
@@ -215,13 +221,13 @@ void lineFollow()
         lineLostCounter = 0;
     }
     // Left sensors detect line
-    else if ((sensor1 == 1 sensor2 == 1) && sensor4 == 0 && sensor5 == 0)
+    else if ((sensor1 == 1 && sensor2 == 1) && sensor4 == 0 && sensor5 == 0)
     {
         turnLeft(LINE_SPEED);
         lineLostCounter = 0;
     }
     // Right sensors detect line
-    else if ((sensor4 == 1 sensor5 == 1) && sensor1 == 0 && sensor2 == 0)
+    else if ((sensor4 == 1 && sensor5 == 1) && sensor1 == 0 && sensor2 == 0)
     {
         turnRight(LINE_SPEED);
         lineLostCounter = 0;
