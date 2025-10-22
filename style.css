@@ -3,8 +3,8 @@
   /* Color Palette */
   --primary-color: #1a1a1a;
   --secondary-color: #2d2d2d;
-  --accent-color: #ff6b6b;
-  --accent-hover: #ff5252;
+  --accent-color: #090404;
+  --accent-hover: #1b0b0b;
   --text-primary: #1a1a1a;
   --text-secondary: #4a4a4a;
   --text-light: #6a6a6a;
@@ -12,7 +12,7 @@
   --bg-secondary: #f8f9fa;
   --bg-tertiary: #f1f3f4;
   --border-color: #e0e0e0;
-  --border-accent: #ff6b6b;
+  --border-accent: #0e0505;
 
   /* Spacing */
   --spacing-xs: 0.25rem;
