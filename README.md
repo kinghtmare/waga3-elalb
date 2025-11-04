@@ -1,7 +1,6 @@
 # TEAM 5: WAGA3 ELALB - Robotic System Project
 
-![Team Logo](photos/ASSETS/FIRE.png)
-*"may god bless our work"*
+
 
 ## 📋 Project Overview
 
@@ -19,12 +18,12 @@ We are TEAM 5: WAGA3 ELALB - a team of 6 undergraduate students creating an inno
 
 | Member | Role | Specialty |
 |--------|------|-----------|
-| **Alfares Ahmed** | Hardware | "The Mad Electrician" (Schematic Design & Layout) |
-| **Omar Mohamed** | Hardware | "The Cable Possessor" (Cable Management & Integration) |
-| **Ziad Moustafa** | Mechanical | "THE MECHANIC" (Hammer Design & Fabrication) |
-| **Mohamed Elsaeed** | Mechanical | "The Blonde Screw Connector" (Base Design & Assembly) |
-| **Amr Emad** | Software | "The Tallest Titan" (Research Functions & Logic) |
-| **Mohamed Ali** | Software | "King of madhbahah alqalea" (Research Functions & Logic) |
+| **Alfares Ahmed** | Hardware | (Schematic Design & Layout) |
+| **Omar Mohamed** | Hardware | (Cable Management & Integration) |
+| **Ziad Moustafa** | Mechanical | (Hammer Design & Fabrication) |
+| **Mohamed Elsaeed** | Mechanical |  (Base Design & Assembly) |
+| **Amr Emad** | Software |  (Research Functions & Logic) |
+| **Mohamed Ali** | Software |  (Research Functions & Logic) |
 
 ## 🛠️ Technical Specifications
 
@@ -48,5 +47,3 @@ We are TEAM 5: WAGA3 ELALB - a team of 6 undergraduate students creating an inno
 - **Control Interface**: PS4 controller via Bluetooth
 - **Sensor Integration**: Multi-sensor fusion from 5 IR sensors
 - **Motor Control**: PWM-based velocity management
-
-## 📁 Project Structure
